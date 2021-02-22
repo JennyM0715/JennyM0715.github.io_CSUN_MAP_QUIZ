@@ -31,4 +31,4 @@ Created a CSUN Map Quiz using Google Maps API, HTML, CSS, and JavaScript.
 
 # Live output:
     - The link below display the outcome of the Timed Typing Test application
-    = https://jennym0715.github.io/JennyM0715.github.io
+    = https://jennym0715.github.io/JennyM0715.github.io_CSUN_MAP_QUIZ/
