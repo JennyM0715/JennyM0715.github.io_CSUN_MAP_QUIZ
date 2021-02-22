@@ -1,0 +1,56 @@
+/* CSS files add styling rules to your content */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+}
+body {
+  margin: 0;
+  font-family: "Times New Roman", helvetica, arial, sans-serif;
+  /*added background-color*/
+  background-color: #d5d3f7; /* Periwinkle*/
+}
+
+header {
+  border-bottom: 1px solid black;
+}
+
+h2 {
+  font-size: 2rem;
+  /*added background-color*/
+  color: #2916ef; /*purple heart*/
+  text-align: center;
+}
+
+#instructions {
+  font-size: 1.5rem;
+  font-family: "Times New Roman", helvetica, arial, sans-serif;
+}
+
+.maparea {
+  
+  /*DOCUMENTATION: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units*/
+  height: 95vh;  /*unit of measure-----viewport's height*/
+  width: 50vw; /*unit of measure-----viewport's width*/
+  float: right;
+}
+#map {
+  height: 100%;
+}
+
+li {
+  margin-bottom: 5px;
+}
+footer {
+  padding-top: 25px;
+  border-top: 1px solid black;
+  background-color: black;
+  color: white;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 50%;
+}

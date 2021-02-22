@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSUN Map Quiz |Project 4</title>
+  
+    <!-- Maps API with personal API key-->
+  <!--used my other google account (not csun account) to get the free credits and generated my google api key--->
+  <!--took forever for this link to work...not sure why but had to generate a new API key. The first 
+        one I generated would display the google maps--->
+  
+  
+  <!----"async" are mechanisms for telling the browser that it's okay to go ahead and keep parsing the HTML in parallel with downloading the script file, and to run the script file later, not right away.->
+  <!--the "defer" asks the browser to parse the HTML document first before loading the script. When the script is executed, it will call the function specified using the callback parameter.->
+  
+  <!--the "src" there are two parameters: key, where you provide your API key, and callback, where you specify the name of a global function to be called once the Maps JavaScript API loads completely.-->
+  <!--callback: The name of a global function to be called once the Maps JavaScript API loads completely.-->
+   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7468kaj39NbYjq9L5Uk5DD5arC_qRuMc&callback=initialize"
+    type="text/javascript"></script>
+  
+  <!-- CSS script --->
+   <link rel="stylesheet" href="style.css" />
+  
+    <!-- JS script --->
+    <script src="/script.js"></script>
+</head>
+<body> 
+    
+    <!----added the ARIA-ROLES--->
+    <!-----main tag with role--->
+    <main role="main">
+      <!---header tag-->
+    <header role="banner">
+      <h2>2020 CSUN FALL EDITION: CSUN MAP QUIZ</h2>
+    </header>
+      
+      
+     <!----start of section tag--->
+      <!--provide instructions for the CSUN map quiz-->
+    <section class="instructions" role="region" style="text-indent: 10px;">
+        <p style="margin-right: 50%; margin-left: 1%;">This Map Quiz is to test your knowledge of the CSUN Campus area. Below, follow the list in order and <strong>double-click</strong> on the CSUN map where you think the building/area is located.</p>
+      
+      <!--list of locations user has to find and double-click on------>
+      <!--decided to just make a list for users to follow instead of 
+      doing how your screenshot looks like where the locations pop-up
+      only after getting the previous one right or wrong-->
+      <!--the location you picked for me is C.R. Johnson Auditorium—D5 and so
+       I picked 4 other random ones(4 from me and 1 from you) so I just picked random ones-->
+      <!---just decided to make an ordered list because not surehow you made the location names pop up-->
+      <!---will be grabbing id name-->
+        <p><ol>
+            <li>Sequoia Hall<span id="result1"></span></li>
+            <li>Eucalyptus Hall<span id="result2"></span></li>
+            <li>C.R. Johnson Auditorium—D5<span id="result3"></span></li>
+            <li>Santa Susana Hall<span id="result4"></span></li>
+            <li>CSUN KLOTZ Student Health Center<span id="result5"></span></li>
+        </ol></p>
+      
+      <!--display numer of times user got location correct, increments by 1 for each correct location---->
+      <!-----will be grabbing the id name for counting and displaying the correct loctions-->
+        <div>
+            <h1>Number of Correct Answers: <span id="correctCount">0</span></h1>
+        </div>
+    </section>
+    <!---end of section--->
+  
+  <!----display the google maps-------->
+  <!----start of section tag--->
+  <!---will be grabbing id name-->
+    <section role="region">
+      <div class="maparea">
+        <div id="map"></div>
+        </div>
+    </section>
+    <!---end of section--->
+    </main>
+    <!---end of main-->
+    
+    
+  </body>  
+    <!--footer tag-->
+    <!--if I put this inside <body> tag then it would display weird--->
+  <footer role="contentinfo">FALL 2020 CIT 384/L: Jennifer Martinez</footer>
+</html>
